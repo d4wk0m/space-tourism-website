@@ -1,0 +1,147 @@
+@media screen and (max-width: 575.98px){
+    .destination{
+        background: rgba(11, 13, 23, 0.25);
+        background-image: url('../../images/destination/background-destination-mobile.jpg');
+        background-blend-mode: lighten, luminosity;
+        background-size: cover;
+        min-height: 100vh;
+        padding: 0 2.4rem;
+        padding-top: 8.8rem;
+        display: flex;
+        
+        flex-direction: column;
+        color: $white;
+        .left-column {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                font-family: 'Barlow Condensed';
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 118.75%;
+                letter-spacing: 2.7px;
+                text-transform: uppercase;
+                span{
+                    opacity: 0.25;
+                    font-family: 'Barlow Condensed';
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    line-height: 118.75%;
+                }
+            }
+            .planet{
+                margin-top: 3.2rem;
+                margin-bottom: 2.6rem;
+                width: 17rem;
+                height: 17rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .navigation{
+                display: flex;
+                column-gap: 2.65rem;
+                .button-container{
+                    padding-bottom: 1.4rem;
+                    pointer-events: none;
+                    transition: 0.3s;
+                    button{
+                        padding: 0;
+                        background: none;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        pointer-events: all;
+                        font-family: 'Barlow Condensed';
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 1.7rem;
+                        letter-spacing: 2.3625px;
+                        color: $lightblue;
+                    }
+                    &.active-destination{
+                        box-shadow: inset 0px -0.3rem 0px 0px $white;
+                        button{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        .right-column {
+            margin-top: 2rem;
+            h2{
+                font-family: 'Bellefair';
+                font-weight: 400;
+                font-size: 5.6rem;
+                line-height: 6.4rem;
+                text-align: center;
+                text-transform: uppercase;
+                color: $white;
+            }
+            p{
+                margin-top: 1.6rem;
+                font-family: 'Barlow';
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                color: $lightblue;
+            }
+            .line{
+                display: block;
+                margin: 3.2rem 0;
+                height: 1px;
+                width: 100%;
+                background-color: #383B4B;
+            }
+            .stats{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 3.2rem;
+                padding-bottom: 5.8rem;
+                .stat{
+                    h4{
+                        font-family: 'Barlow Condensed';
+                        font-weight: 400;
+                        font-size: 1.4rem;
+                        line-height: 1.7rem;
+                        letter-spacing: 2.3625px;
+                        text-transform: uppercase;
+                        color: $lightblue;
+                    }
+                    h3{
+                        margin-top: 1.2rem;
+                        font-family: 'Bellefair';
+                        font-weight: 400;
+                        font-size: 2.8rem;
+                        line-height: 3.2rem;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: $white;  
+                    }
+                }
+            }
+        }
+        &::before{
+            content: '';
+            display: block;
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0.25;
+            
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+}

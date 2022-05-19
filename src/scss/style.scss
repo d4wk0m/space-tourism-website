@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+$darkblue: #0B0D17;
+$lightblue: #D0D6F9;
+$white: #FFFFFF;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Bellefair', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: $darkblue;
+}
+
+@media screen and (max-width: 575.98px){
+    html{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 576px){
+    html{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px){
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 992px){
+    html{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@import './pages/menu';
+@import './pages/home';
+@import './pages/destination';
+@import './pages/crew';
+@import './pages/technology';

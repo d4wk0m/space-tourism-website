@@ -1,0 +1,97 @@
+@media screen and (max-width: 575.98px){
+    header{
+        display: flex;
+        align-items: center;
+        padding: 2.4rem;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        .logo{
+            background-color: $white;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .line{
+            display: none;
+        }
+        .navigation{
+            position: fixed;
+            top: 0;
+            right: 0;
+            min-height: 100vh;
+            width: 0;
+            overflow: hidden;
+            z-index: 2;
+            transition: 0.5s;
+            nav{
+                margin-left: auto;
+                width: 66.666%;
+                height: 100vh;
+                background-color: rgba(255, 255, 255, 0.04);
+                backdrop-filter: blur(40px);
+                z-index: 20;
+                padding: 11.8rem 3.2rem;
+                display: flex;
+                flex-direction: column;
+                row-gap: 3.2rem;
+                a{
+                    font-family: 'Barlow Condensed';
+                    font-style: normal;
+                    white-space: nowrap;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2.7px;
+                    text-transform: uppercase;
+
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+            &.active{
+                width: 100%;
+            }
+        }
+        .menu-icon{
+            display: block;
+            margin-left: auto;
+            pointer-events: all;
+            z-index: 10;
+            .hamburger {
+                pointer-events: none;
+                .line{
+                    pointer-events: none;
+                    width: 2.4rem;
+                    height: 0.3rem;
+                    background-color: $lightblue;
+                    display: block;
+                    margin: 0.6rem auto;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &.is-active{
+                .hamburger{
+                    .line:nth-child(2){
+                        opacity: 0;
+                    }
+                    .line:nth-child(1){
+                        transform: translateY(0.9rem) rotate(45deg);
+                    }
+                    .line:nth-child(3){
+                        transform: translateY(-0.9rem) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
+

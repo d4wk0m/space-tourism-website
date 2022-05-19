@@ -1,0 +1,112 @@
+@media screen and (max-width: 575.98px){
+    .technology {
+        background: url('../../images/technology/background-technology-mobile.jpg') no-repeat;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 8.8rem 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        h2{
+            color: $white;
+            order: 1;
+            font-family: 'Barlow Condensed';
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 118.75%;
+            letter-spacing: 2.7px;
+            text-transform: uppercase;
+            span{
+                opacity: 0.25;
+                font-family: 'Barlow Condensed';
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 118.75%;
+            }
+        }
+        .right-column{
+            padding-top: 3.2rem;
+            width: 100%;
+            overflow: hidden;
+            .image{
+                height: 17rem;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center bottom;
+                }
+            }
+        }
+        .left-column{
+            padding: 0 2.4rem;
+            margin-top: 3.4rem;
+            .buttons{
+                display: flex;
+                justify-content: center;
+                column-gap: 1.6rem;
+                button{
+                    font-family: 'Bellefair';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    height: 4rem;
+                    width: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: none;
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    outline: none;
+                    border-radius: 50%;
+                    color: $white;
+                    transition: 0.3s;
+                    &.active-technology {
+                        background-color: $white;
+                        color: $darkblue;
+                    }
+                }
+            }
+            .text{
+                margin-top: 2.6rem;
+                h3{
+                    font-family: 'Barlow Condensed';
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    line-height: 1.7rem;
+                    text-align: center;
+                    letter-spacing: 2.3625px;
+                    text-transform: uppercase;
+                    color: $lightblue;
+                }
+                h2{
+                    margin-top: 1rem;
+                    font-family: 'Bellefair';
+                    font-weight: 400;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+                p{
+                    margin-top: 1.6rem;
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    color: #D0D6F9;
+
+                }
+            }
+        }
+    }
+}
