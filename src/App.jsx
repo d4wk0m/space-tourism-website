@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { HashRouter } from "react-router-dom";
 import './scss/style.scss'
 import Menu from "./components/Menu";
 import Home from "./components/Home";
@@ -16,7 +17,7 @@ function App() {
         <div>
             {data && 
             <div className="App">
-            <Router>
+            <HashRouter>
                 <Menu />
                 <main>
                 <Routes>
@@ -26,7 +27,7 @@ function App() {
                     <Route path="/technology" element={<Technology prop={data.technology} />} />
                 </Routes>
                 </main>
-            </Router>
+            </HashRouter>
             </div>
         }
         </div>

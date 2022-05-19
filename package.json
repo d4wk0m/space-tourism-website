@@ -1,8 +1,8 @@
 {
   "name": "space-tourism-website",
   "version": "0.2.0",
-  
-  "private": true,
+  "homepage": "https://d4wk0m.github.io/space-tourism-website/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
